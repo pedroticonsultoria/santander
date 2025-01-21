@@ -1,11 +1,13 @@
+package connection;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexaoBanco {
     private static final String URL = "jdbc:mysql://localhost:3306/santander";
-    private static final String USUARIO = "";  // Usuário padrão do XAMPP
-    private static final String SENHA = "";        // Senha padrão (vazia por padrão)
+    private static final String USUARIO = "usuario_java";  // Usuário padrão do XAMPP
+    private static final String SENHA = "senha123";        // Senha padrão (vazia por padrão)
 
     public static Connection conectar() {
         try {
